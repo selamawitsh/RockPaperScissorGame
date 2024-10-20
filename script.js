@@ -37,3 +37,19 @@ function PlayRound(humanSelection,ComputerSelection){
     }
 
 }
+
+function PlayGame(){
+    for(i=1;i<6;i++){
+        console.log("round",i)
+        humanSelection=getHumanChoice()
+        ComputerSelection=getComputerChoice()
+        PlayRound(humanSelection,ComputerSelection)
+    }
+    if(humanScore>ComputerScore){
+        console.log("the final winner is human",humanScore)
+    }else{
+        console.log("the final winner is Computer",ComputerScore)
+    }
+   
+}
+PlayGame()
