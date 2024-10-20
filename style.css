@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+}
+h1 {
+    color: #5d5c5c;
+}
+.scoreboard {
+    margin: 20px 0;
+}
+.choice {
+    background-color: #8e6b45;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+.choice:hover {
+    background-color: #e27311;
+}
+.result {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+#play-again {
+    margin-top: 20px;}
