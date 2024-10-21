@@ -45,7 +45,8 @@ h1 {
     padding: 15px;
     border-radius: 14px;
     border:none;
-    margin-left: 222px;
+    margin-left: 107px;
+    cursor: pointer;
 }
 
 #play-again:hover{

@@ -38,6 +38,7 @@ function getHumanChoice() {
             const computerSelection = getComputerChoice(); 
             playRound(humanSelection, computerSelection); 
             updateScores() 
+            
             round++;
             if (round > 5) {
                 determineWinner();
@@ -54,17 +55,19 @@ function updateScores() {
 }
 
 function determineWinner() {
+    
     if (humanScore > ComputerScore) {
-        document.getElementById('result-text').textContent=('The winner is Human')
+        
+        document.getElementById('result-text').textContent=(` Human ${humanScore} - Computer ${ComputerScore}`)
+       ;
     } else if (humanScore < ComputerScore) {
-        document.getElementById('result-text').textContent=('The winner is Computer')
+        
+        document.getElementById('result-text').textContent=(` Computer ${ComputerScore} - Human ${humanScore}`)
     } else {
-        document.getElementById('result-text').textContent=('The game is a tie!')
+        
+        document.getElementById('result-text').textContent=(` Computer ${ComputerScore} - Human ${humanScore}`)
     }
 }
-
-
-
 
 function PlayAgain(){
     let again=document.getElementById('play-again')
@@ -84,5 +87,6 @@ function PlayAgain(){
     let again = document.getElementById('play-again');
     again.style.display = 'none';
 
+     document.getElementById('result-text').style.display='none'
  }
 getHumanChoice();
