@@ -10,7 +10,7 @@ body {
 .container {
     text-align: center;
     background: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
@@ -39,4 +39,15 @@ h1 {
     font-size: 1.5em;
 }
 #play-again {
-    margin-top: 20px;}
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(156, 244, 129);
+    padding: 15px;
+    border-radius: 14px;
+    border:none;
+    margin-left: 222px;
+}
+
+#play-again:hover{
+    background-color: greenyellow;
+}
